@@ -1,0 +1,12 @@
+{
+  "name": "jsbuild-core",
+  "version": "0.0.1",
+  "description": "JSBuild core service",
+  "main": "index.js",
+  "author": "Jamey McElveen <jamey@mcelveen.us>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSBuild/jsbuild-core.git"
+  },
+}
