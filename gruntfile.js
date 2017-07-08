@@ -89,16 +89,8 @@ module.exports = function(grunt) {
   ////////////////////////////////////////
   // region REGISTER TASK
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', [
-    //'jshint',
-    'rollup']);
-  grunt.registerTask('publish_npm', ['exec:publish_npm']);
-  grunt.registerTask('deploy', ['build', 'bump'], function() {
-    console.log('deploy');
-  });
-  grunt.registerTask('publish', ['publish_npm'], function() {
-    console.log('publish');
-  });
+  grunt.registerTask('build', ['rollup']);
+  grunt.registerTask('publish', ['build', 'bump', 'exec:publish_npm']);
   // endregion REGISTER TASK
   ////////////////////////////////////////
 
