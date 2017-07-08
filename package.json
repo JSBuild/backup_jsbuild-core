@@ -6,7 +6,8 @@
   "author": "Jamey McElveen <jamey@mcelveen.us>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup ./src/build/index -o dist/jsbuidl.core.js"
+    "build": "grunt build",
+    "publish": "grunt publish"
   },
   "repository": {
     "type": "git",
@@ -56,12 +57,23 @@
     "webpack-merge": "^4.1.0"
   },
   "engines": {
-    "node": ">= 6.11.0",
-    "npm": ">= 5.0.4"
+    "node": ">= 6.0.0",
+    "npm": ">= 5.0.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 9"
-  ]
+  ],
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bump": "^0.8.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^1.0.0",
+    "grunt-rollup": "^0.8.0",
+    "publish": "^0.6.0",
+    "rollup": "^0.34.13",
+    "rollup-plugin-buble": "^0.13.0"
+  }
 }

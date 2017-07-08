@@ -2,7 +2,9 @@
  * Created by Jamey McElveen on 7/6/17.
  */
 
-import release from './build/release';
-import debug from './build/debug';
+const release = require('./lib/release');
+const debug = require('./lib/debug');
 
-export default {releaserollup, debug};
+module.exports = {
+  release, debug
+};
