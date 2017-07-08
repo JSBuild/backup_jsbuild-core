@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build": "grunt build",
-    "publish": "grunt publish"
+    "publish":"grunt publish",
+    "test": "echo LOL"
   },
   "repository": {
     "type": "git",

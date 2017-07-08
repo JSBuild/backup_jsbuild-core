@@ -45,7 +45,7 @@ module.exports = function(grunt) {
     // region BUILD
     // validate scripts
     jshint: {
-      files: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'lib/**/*.js'],
       options: {
         asi: true,
         esversion: 6,
